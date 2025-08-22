@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>EmpireS2H — Dashboard</title>
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <div id="lockscreen" class="lock">
+    <div class="card">
+      <h1>EmpireS2H</h1>
+      <p>Enter PIN to continue</p>
+      <input id="pin" type="password" placeholder="••••" inputmode="numeric" maxlength="4" />
+      <button id="loginBtn">Unlock</button>
+      <p class="hint">Default PIN: <b>1111</b> (change in Settings)</p>
+    </div>
+  </div>
+
+  <header class="topbar">
+    <div class="brand">🚀 Empire Control</div>
+    <div class="right">
+      <button id="themeSimple">Simple</button>
+      <button id="themeLuxury">Luxury</button>
+    </div>
+  </header>
+
+  <nav class="tabs">
+    <button data-tab="home" class="active">Home</button>
+    <button data-tab="pipeline">Pipeline</button>
+    <button data-tab="settings">Settings</button>
+  </nav>
+
+  <main>
+    <section id="home" class="tab active">
+      <div class="card">
+        <h2>Goal (30–45 days)</h2>
+        <p>$5k–$10k/month via faceless YT + Shorts + Affiliate.</p>
+      </div>
+      <div class="card">
+        <h2>Today’s Sprint</h2>
+        <ul>
+          <li>3 scripts finalize</li>
+          <li>Voice-over auto-gen</li>
+          <li>CapCut assemble</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h2>Geo Targets (High CPM)</h2>
+        <p>US • CA • UK • UAE</p>
+      </div>
+    </section>
+
+    <section id="pipeline" class="tab">
+      <div class="card">
+        <h2>Production Queue</h2>
+        <ol>
+          <li>10 Free AI Tools — rendering</li>
+          <li>$100/day (Short) — queued</li>
+          <li>Top 7 AI Sites — scheduled</li>
+        </ol>
+      </div>
+      <div class="card">
+        <h2>Automation Hooks</h2>
+        <p>YT Auto-Upload • Shorts Fan-out • Affiliate Injector • Alerts</p>
+      </div>
+    </section>
+
+    <section id="settings" class="tab">
+      <div class="card">
+        <h2>Security</h2>
+        <label>Change PIN</label>
+        <div class="row">
+          <input id="newPin" placeholder="new 4-digit PIN" maxlength="4" inputmode="numeric" />
+          <button id="savePin">Save</button>
+        </div>
+        <p class="hint">Your PIN is stored locally on your device.</p>
+      </div>
+
+      <div class="card">
+        <h2>Theme</h2>
+        <p>Switch between Simple and Luxury (Musk-Mode). Your choice is saved.</p>
+      </div>
+
+      <div class="card">
+        <h2>Export</h2>
+        <button id="exportBtn">Export Dashboard JSON</button>
+        <p class="hint">Use this to back up notes/plans later.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="foot">© EmpireS2H — Manager Mode</footer>
+  <script src="./app.js"></script>
+</body>
+</html>
